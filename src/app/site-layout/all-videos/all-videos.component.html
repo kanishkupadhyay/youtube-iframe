@@ -1,0 +1,12 @@
+<div class="container-wrapper">
+   <div class="cards-container-wrapper">
+        <mat-grid-list [cols]="columns" rowHeight="1.7:1">
+            <div *ngIf="loader" class="loader-wrapper">
+                <span class="load"></span>
+            </div>
+            <mat-grid-tile class="card" *ngFor="let k of allVideos">
+                <iframe  width="487" height="291"  [src]='k.embedurl | safe'  title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </mat-grid-tile>
+          </mat-grid-list>
+   </div>
+</div>

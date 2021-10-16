@@ -1,0 +1,29 @@
+<body>
+    <nav>
+      <div class="navbar">
+        <div class="container nav-container">
+            <input class="checkbox" type="checkbox" name="" id="" />
+            <div class="hamburger-lines">
+              <span class="line line1"></span>
+              <span class="line line2"></span>
+              <span class="line line3"></span>
+            </div>  
+          <div class="logo">
+            <h1>KanishkPlayer</h1>
+          </div>
+          <div #menuItems class="menu-items">
+            <li><a routerLink="/home">Home</a></li>
+            <li (click)="closeSidenav($event)"><a routerLink="/all-videos">Videos</a></li>
+            <li><a routerLink="/songs">Songs</a></li>
+            <li style="margin: 0;"><div class="search-box">
+                <input class="text" type="text" placeholder="Search here...">
+                <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                    <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+                  </svg>
+            </div><li>
+            <li><a routerLink="#">About us</a></li>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </body>
